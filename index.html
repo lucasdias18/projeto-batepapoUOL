@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./estilo.css">
+    </head>
+    <body>
+        <div class="corpo">
+            <div class="topo">
+                <img class="logo" src="./imagens/logo 1.png" />
+                <button onclick="abrirMenu()">
+                    <ion-icon name="people"></ion-icon>
+                </button>
+                <div class="menu escondido">
+                    <h1>Escolha um contato para enviar mensagem:</h1>
+                    <div class="contatos">
+                        
+                        <button class="contato"><ion-icon name="people"></ion-icon>Todos</button>
+                    </div>
+                    <h1>Escolha a visibilidade:</h1>
+                    <div class="visibilidade">
+                        
+                        <button class="visi">Público</button>
+                        <button>Reservadamente</button>
+                    </div>
+                </div>
+            </div>
+            <div class="conversa"></div>
+            <div class="mensagem">
+                <input placeholder="Escreva aqui..." />
+                <button class="msg" onclick="enviarMensagem()">
+                    <ion-icon name="paper-plane-outline"></ion-icon>
+                </button>
+            </div>
+        </div> 
+        <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
